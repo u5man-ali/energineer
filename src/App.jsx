@@ -27,7 +27,7 @@ function App() {
             {/* this button has not text label, only left icon */}
         </Button>
         <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-12 h-12"></img>
-        <h1 className="text-body-xl font-semibold">DezineCrafts - Ultimate UI Kit</h1></div>
+        <h1 className="text-body-xl font-semibold">Energineers - Solar Calculator</h1></div>
       </nav>
       <div className="w-full flex gap-0 min-h-screen max-w-7xl mx-auto relative">
           {/* Backdrop overlay: only visible when sidebar is open on mobile */}

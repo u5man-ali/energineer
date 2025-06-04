@@ -1,9 +1,9 @@
 {
-  "name": "live-preview",
+  "name": "energineer",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://u5man-ali.github.io/live-preview",
+  "homepage": "https://u5man-ali.github.io/energineer",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
