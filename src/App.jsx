@@ -40,7 +40,7 @@ function App() {
             {/* this button has not text label, only left icon */}
         </FAB>
         <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-12 h-12"></img>
-        <h1 className="w-full text-body-xl font-semibold text-brand-primary-default">Energineers - Guide To Design</h1>
+        <h1 className="w-full text-body-xl font-semibold text-brand-primary-default">Energineers - Guide To Renewable Energy</h1>
         <Button //theme toggle button
           size="sm"
           variant="outline"

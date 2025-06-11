@@ -9,30 +9,75 @@ const sections = [
     label: "Introduction"
   },
   { 
-    id: "basic-components",
-    label: "Basic Components",
+    id: "solarPanels",
+    label: "Solar Panels",
     children: [
-      { id: "button", label: "Button", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
-      { id: "fab", label: "FAB", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
-      { id: "alert", label: "Alert", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
-      { id: "badge", label: "Badge", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
+      { id: "panelTypes", label: "Types", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "panelSpecs", label: "Specs & Datasheets", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "panelCalculation", label: "Design Calculations", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "panelProcurement", label: "Procurement", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "panelInstallation", label: "Installation Guide", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "panelMaintenance", label: "Repair & Maintenance", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
     ]
   },
   { 
-    id: "building-blocks",
-    label: "Building Blocks",
+    id: "supportStructure",
+    label: "Support Structures",
     children: [
-      { id: "accordion", label: "Accrodion", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
-      { id: "input", label: "Input", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
-      { id: "dropdown", label: "Dropdown", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
-      { id: "breadcrumb", label: "Breadcrumb", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",}
+      { id: "structTypes", label: "Load Types", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "structSpecs", label: "Specifications", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "structCalculation", label: "Design Calculations", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "structProcurement", label: "Procurement Tips", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "structInstallation", label: "Installation Guide", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "structMaintenance", label: "Structural Maintenance", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
     ]
   },
   { 
-    id: "ui-blocks",
-    label: "UI Blocks",
+    id: "inverters",
+    label: "Inverters",
     children: [
-      { id: "datepicker", label: "Date Picker", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
+      { id: "inverterTypes", label: "Types", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "inverterSpecs", label: "Specifications", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "inverterCalculation", label: "Design Calculations", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "inverterProcurement", label: "Procurement", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "inverterInstallation", label: "Installation Guide", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "inverterMaintenance", label: "Troubleshooting", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+    ]
+  },
+  { 
+    id: "connect",
+    label: "Connectivity",
+    children: [
+      { id: "connectTypes", label: "Wiring & Connections", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "connectSpecs", label: "Specifications", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "connectCalculation", label: "Design Calculations", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "connectProcurement", label: "Procurement", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "connectInstallation", label: "Installation", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "connectMaintenance", label: "Maintenance", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+    ]
+  },
+  { 
+    id: "storage",
+    label: "Energy Storage",
+    children: [
+      { id: "storageTypes", label: "Battery Types", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "storageSpecs", label: "Specs", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "storageCalculation", label: "Design Calculations", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "storageProcurement", label: "Procurement", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "storageInstallation", label: "Installation", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "storageMaintenance", label: "Maintenance", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+    ]
+  },
+  { 
+    id: "safety",
+    label: "Safety",
+    children: [
+      { id: "safetyTypes", label: "Circuit Breakers ", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "safetySpecs", label: "Specs & Datasheets", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "safetyCalculation", label: "Design Calculations", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "safetyProcurement", label: "Procurement", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "safetyInstallation", label: "Installation", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "safetyMaintenance", label: "Maintenance", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
     ]
   },
 ];
@@ -45,14 +90,15 @@ export default function Sidebar({ onSelect }) {
     setActive(id);
     onSelect(id);
 
-    // If parentId is passed, ensure dropdown is expanded
-    //if (parentId) {
-      //setExpanded(prev => ({ ...prev, [parentId]: true }));
-    //}
   };
 
   const toggleDropdown = (id) => {
-    setExpanded(prev => ({ ...prev, [id]: !prev[id] }));
+    setExpanded(prev => {
+      if (prev[id]) {
+        return{};
+      }
+      return { [id]: true};
+    }) 
   };
 
   return (
@@ -87,24 +133,24 @@ export default function Sidebar({ onSelect }) {
 
               {section.children && (
                 <div className={`overflow-hidden transition-all duration-300 ease-in-out
-                ${isExpanded ? "max-h-40 py-1" : "max-h-0"} flex flex-col gap-1`}>
-                    {section.children.map((child) => (
-                      <Button
-                        key={child.id}
-                        size="sm"
-                        variant={active === child.id ? "solid" : "transparent"}
-                        style={active === child.id ? "primary" : "secondary"}
-                        shape="rounded"
-                        iconSize="sm"
-                        showLeftIcon={true}
-                        iconLeftName= "Arrow-Turn-Down-Right-Outline"
-                        showRightIcon={false}
-                        onClick={() => handleSelect(child.id, section.id)}
-                        className="justify-start text-body-md text-left"
-                      >
-                        {child.label}
-                      </Button>
-                    ))}
+                ${isExpanded ? "max-h-80 py-1" : "max-h-0"} flex flex-col gap-1`}> {
+                  section.children.map((child) => (
+                    <Button
+                      key={child.id}
+                      size="sm"
+                      variant={active === child.id ? "solid" : "transparent"}
+                      style={active === child.id ? "primary" : "secondary"}
+                      shape="rounded"
+                      iconSize="sm"
+                      showLeftIcon={true}
+                      iconLeftName= "Arrow-Turn-Down-Right-Outline"
+                      showRightIcon={false}
+                      onClick={() => handleSelect(child.id, section.id)}
+                      className="justify-start text-body-md text-left"
+                    >
+                      {child.label}
+                    </Button>
+                  ))}
                 </div>
               )}
             </div>
