@@ -1,11 +1,11 @@
-// src/components/Button.jsx
+// src/components/fab.jsx
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 
 const sizes = {
-  sm: "text-body-sm px-3 py-1.5",
-  md: "text-body-md px-4 py-2 ",
-  lg: "text-body-lg px-5 py-2.5",
+  sm: "text-body-sm p-2",
+  md: "text-body-md p-3",
+  lg: "text-body-lg p-4",
 };
 const shapes = {
   rounded: "rounded-curve-md",
@@ -63,8 +63,7 @@ const styles = {
   },
 };
 
-export default function Button({
-  children,
+export default function FAB({
   size = "md", // "sm", "md", or "lg"
   variant = "gradient", // "gradient", "solid", or "outline"
   style = "primary", // "neutral", "primary", "success", "error", "warning", "info"
@@ -72,10 +71,7 @@ export default function Button({
   iconSize = "md", // "sm", "md", or "lg"
   className = "",
   disabled = false,
-  showLeftIcon = true,
-  iconLeftName = "Placeholder-Outline", // check filenames to use other icons in src/icons
-  showRightIcon = true,
-  iconRightName = "Arrow-Enter-Left-Outline", // check filenames to use other icons in src/icons
+  iconName = "Placeholder-Outline", // check filenames to use other icons in src/icons
   ...props
 }) {
   const baseClasses = "inline-flex items-center gap-2 font-medium transition-all whitespace-nowrap";
@@ -83,22 +79,16 @@ export default function Button({
   const sizeClass = sizes[size];
   const shapeClass = shapes[shape];
   const variantClass = styles[style]?.[variant] ?? "";
-  const [LeftIcon, setLeftIcon] = useState(null);
-  const [RightIcon, setRightIcon] = useState(null);
+  const [Icon, setIcon] = useState(null);
   
   useEffect(
     () => {
-      if(showLeftIcon && iconLeftName) {
-        import(`../icons/${iconLeftName}.svg?react`)
-        .then((icon) => setLeftIcon(() => icon.default))
-        .catch((error) => console.error(`Error loading left icon: ${error}`));
+      if(iconName) {
+        import(`../icons/${iconName}.svg?react`)
+        .then((icon) => setIcon(() => icon.default))
+        .catch((error) => console.error(`Error loading icon: ${error}`));
       }
-      if(showRightIcon && iconRightName) {
-        import(`../icons/${iconRightName}.svg?react`)
-        .then((icon) => setRightIcon(() => icon.default))
-        .catch((error) => console.error(`Error loading right icon: ${error}`));
-      }
-    }, [showLeftIcon, iconLeftName, showRightIcon, iconRightName]
+    }, [iconName]
   );
   return (
       <button
@@ -113,9 +103,7 @@ export default function Button({
         disabled={disabled}
         {...props}
       >
-        {showLeftIcon && LeftIcon && <LeftIcon className={iconSizes[iconSize]} /> }
-        {children}
-        {showRightIcon && RightIcon && <RightIcon className={iconSizes[iconSize]} /> }
+        {Icon && <Icon className={iconSizes[iconSize]} /> }
       </button>
   );
 }

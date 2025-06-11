@@ -1,7 +1,6 @@
 // src/components/sidebar.jsx
 import { useState } from "react";
 import Button from './button';
-import Dropdown from './dropdown';
 
 // Sidebar structure with parent and child sections
 const sections = [
@@ -13,10 +12,10 @@ const sections = [
     id: "basic-components",
     label: "Basic Components",
     children: [
+      { id: "button", label: "Button", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
       { id: "fab", label: "FAB", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
       { id: "alert", label: "Alert", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
       { id: "badge", label: "Badge", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",},
-      { id: "button", label: "Button", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline",}
     ]
   },
   { 
@@ -57,7 +56,7 @@ export default function Sidebar({ onSelect }) {
   };
 
   return (
-    <aside className="h-screen w-full overflow-y-auto border-white-500 px-4 py-6 bg-white-300">
+    <aside className="h-screen w-full overflow-y-auto px-4 py-6">
       <nav className="flex flex-col gap-1">
         {sections.map((section) => {
           const isExpanded = expanded[section.id] || section.children?.some(child => child.id === active);
@@ -67,7 +66,7 @@ export default function Sidebar({ onSelect }) {
               <Button
                 size="md"
                 variant={isActive ? "solid" : isExpanded ? "link" : "transparent"}
-                style={isActive ? "primary" : isExpanded ? "primary" : "neutral"}
+                style={isActive ? "primary" : isExpanded ? "primary" : "secondary"}
                 shape="rounded"
                 iconSize="md"
                 showLeftIcon={!!section.iconLeftName}
@@ -94,7 +93,7 @@ export default function Sidebar({ onSelect }) {
                         key={child.id}
                         size="sm"
                         variant={active === child.id ? "solid" : "transparent"}
-                        style={active === child.id ? "primary" : "neutral"}
+                        style={active === child.id ? "primary" : "secondary"}
                         shape="rounded"
                         iconSize="sm"
                         showLeftIcon={true}
