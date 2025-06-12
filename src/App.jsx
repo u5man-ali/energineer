@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="w-full flex-1 min-h-screen bg-neutral-bg">
-      <nav className="w-full h-min bg-brand-primary-bg border-b border-brand-primary-regular shadow-sm flex gap-4 items-center px-4 py-4 sticky top-0 z-50">
+      <nav className="w-full h-min bg-brand-primary-bg border-b border-brand-primary-regular shadow-sm flex gap-4 items-center px-4 py-2 sm:p-4 sticky top-0 z-50">
         <div className="w-full max-w-7xl mx-auto flex items-center gap-4 justify-start">
         <FAB //sidebar toggle button
           size="sm"
@@ -39,8 +39,8 @@ function App() {
           >
             {/* this button has not text label, only left icon */}
         </FAB>
-        <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-12 h-12"></img>
-        <h1 className="w-full text-body-xl font-semibold text-brand-primary-default">Energineers - Guide To Renewable Energy</h1>
+        <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-8 h-8 sm:w-12 sm:h-12"></img>
+        <h1 className="w-full text-body-md sm:text-body-xxl font-semibold text-brand-primary-default">Energineers - Energy Engineers</h1>
         <Button //theme toggle button
           size="sm"
           variant="outline"
