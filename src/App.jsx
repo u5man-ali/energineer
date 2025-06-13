@@ -39,7 +39,7 @@ function App() {
           >
             {/* this button has not text label, only left icon */}
         </FAB>
-        <img src="DezineCrafts.svg" alt="Dezine Crafts Logo" className="w-8 h-8 sm:w-12 sm:h-12"></img>
+        <img src="Energineers.svg" alt="Dezine Crafts Logo" className="rounded-pill bg-neutral-white p-1 w-8 h-8 sm:w-12 sm:h-12"></img>
         <h1 className="w-full text-body-md sm:text-body-xxl font-semibold text-brand-primary-default">Energineers - Energy Engineers</h1>
         <Button //theme toggle button
           size="sm"
