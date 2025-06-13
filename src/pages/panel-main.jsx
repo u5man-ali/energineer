@@ -1,7 +1,4 @@
-import { useState } from "react";
-import Button from '../components/button';
 import Table from '../components/table';
-import Tabs from '../components/tabs';
 
 export default function PanelMain() {
 const columns = ["Types", "Avg. Efficiency (%)", "Lifespan (Years)", "Pros", "Cons"];
