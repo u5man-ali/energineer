@@ -12,7 +12,7 @@ const sections = [
     id: "solarPanels",
     label: "Solar Panels",
     children: [
-      { id: "panelTypes", label: "Types", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
+      { id: "panelMain", label: "About Solar Panels", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
       { id: "panelSpecs", label: "Specs & Datasheets", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
       { id: "panelCalculation", label: "Design Calculations", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
       { id: "panelProcurement", label: "Procurement", showLeftIcon: true, iconLeftName: "Arrow-Turn-Down-Right-Outline"},
