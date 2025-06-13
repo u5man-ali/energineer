@@ -1,9 +1,11 @@
 // src/components/content.jsx
 import Introduction from './pages/introduction';
+import Panel_Types from './pages/panelTypes';
 
 
 const componentMap = {
   introduction: Introduction,
+  panelTypes: Panel_Types,
 
   // Add other components here as needed
 };
