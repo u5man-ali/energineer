@@ -33,7 +33,7 @@ export default function Content({ selectedPage }) {
       <p className="w-full h-min"> Please select another item from the sidebar to view.</p>
     </div>);
   return (
-    <main className="flex-1 mb-4">
+    <main className="flex-1 h-screen">
       {/* Dynamically load page previews here based on selection */}
       {/* Example static placeholder: */}
       <div >

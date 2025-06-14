@@ -24,7 +24,7 @@ function App() {
   const toggleSidebar = () => setSidebarOpen(prev => !prev);
 
   return (
-    <div className="w-full flex-1 min-h-screen bg-neutral-bg">
+    <div className="w-full flex-1 bg-neutral-bg">
       <nav className="w-full h-min bg-brand-primary-bg border-b border-brand-primary-regular shadow-sm flex gap-4 items-center px-4 py-2 sm:p-4 sticky top-0 z-50">
         <div className="w-full max-w-7xl mx-auto flex items-center gap-4 justify-start">
         <FAB //sidebar toggle button
@@ -56,7 +56,7 @@ function App() {
         </Button>
         </div>
       </nav>
-      <div className="w-full flex gap-0 min-h-full max-w-7xl mx-auto relative">
+      <div className="w-full flex gap-0  max-w-7xl mx-auto relative">
           <div className={`fixed lg:sticky top-[80px] z-30 self-start left-0 h-[calc(100vh-80px)] w-60 shrink-0 bg-neutral-tertiary border-r border-neutral-regular transition-transform duration-300 ease-in-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:block`}
           >
@@ -67,7 +67,7 @@ function App() {
             }} 
             />
           </div>
-          <div className="w-full p-6">
+          <div className="w-full h-min p-6 overflow-auto">
             {/*Main Content imported from /components/content.jsx*/}
             <Content selectedPage={selectedPage} />
           </div>

@@ -2,7 +2,7 @@
 export default function buttonDemo() {
   
   return (
-    <div className="flex justify-center items-center gap-4 mb-4 flex-wrap">
+    <div className="flex justify-center items-start gap-4 mb-4 flex-wrap">
         <div className="w-full flex justify-start items-center gap-4 mb-4 flex-wrap">
         <h1 className="w-full h-min text-body-xxl text-neutral-default font-bold border-b border-neutral-regular py-2">Welcome To Energineers</h1>
         <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold">About Energineers – Powering Innovation, Empowering Solutions<br></br></h3>

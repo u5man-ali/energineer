@@ -53,7 +53,7 @@ export default function Tabs({
 
   return (
     <div className={clsx("w-full", className)}>
-      <div className="flex overflow-x-scroll lg:overflow-hidden">
+      <div className="flex overflow-x-auto">
         {tabs.map((tab, index) => (
           <div
             key={tab.id}
