@@ -24,7 +24,7 @@ export default function PanelMain() {
 ];
   return (
     <div className="flex justify-center items-start gap-4 flex-wrap h-screen">
-      <div className="w-full flex justify-start items-center gap-4 mb-4 flex-wrap text-neutral-hovered ">
+      <div className="w-full flex justify-start items-center mb-4 flex-wrap text-neutral-hovered ">
         <h1 className="w-full h-min text-body-xxl text-neutral-default font-bold border-b border-neutral-regular py-2">All About Solar Panels</h1>
         <p className="mb-4">Solar panels are no longer a futuristic concept—they’re a mainstream energy solution powering millions of homes worldwide. But with so many types available, how do you choose the right one?
         </p>
@@ -42,7 +42,7 @@ export default function PanelMain() {
         </div>
         {selectedTab === "type1" && //tab1 selector and content div starting here
         <div>
-            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4"> Monocrystalline Solar Panels: The Gold Standard</h3>
+            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4 border-t border-neutral-regular"> Monocrystalline Solar Panels: The Gold Standard</h3>
             <h5 className="w-full h-min text-body-md text-neutral-default font-semibold mb-4">What Are They?</h5>
             <p className="mb-4">Monocrystalline panels are made from a single silicon crystal, giving them a sleek black appearance and superior efficiency. They dominate the market, making up 98% of global solar shipments in 2023.</p>
             <p className="mb-4">
@@ -188,8 +188,8 @@ export default function PanelMain() {
             <p className="mb-4">Only suitable for home owners who prioritize aesthetics over cost-efficiency</p>
         </div>}
 
-        <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold ">Which Solar Panel type is Best for You?</h3>
-        <div className="w-full overflow-x-auto border border-neutral-regular rounded-curve-xl justify-start items-center flex mb-40">
+        <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold mb-4">Which Solar Panel type is Best for You?</h3>
+        <div className="w-full overflow-x-auto border border-neutral-regular rounded-curve-xl justify-start items-center flex mb-20">
           <div className="p-4">
             <Table columns={columns} rows={rows} size="md" style="primary" />
           </div>
