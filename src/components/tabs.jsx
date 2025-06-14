@@ -23,7 +23,7 @@ const sizes = {
 const styles = {
   primary: {
     base: "text-brand-primary-default hover:bg-neutral-primary",
-    active: "bg-brand-primary-focus hover:bg-brand-primary-focus text-neutral-white",
+    active: "bg-brand-primary-rest hover:bg-brand-primary-rest text-neutral-white",
   },
   neutral: {
     base: "text-neutral-default hover:bg-neutral-primary",

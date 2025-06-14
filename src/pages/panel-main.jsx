@@ -42,7 +42,7 @@ export default function PanelMain() {
         </div>
         {selectedTab === "type1" && //tab1 selector and content div starting here
         <div>
-            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4 border-t border-neutral-regular"> Monocrystalline Solar Panels: The Gold Standard</h3>
+            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4 border-t border-neutral-strong"> Monocrystalline Solar Panels: The Gold Standard</h3>
             <h5 className="w-full h-min text-body-md text-neutral-default font-semibold mb-4">What Are They?</h5>
             <p className="mb-4">Monocrystalline panels are made from a single silicon crystal, giving them a sleek black appearance and superior efficiency. They dominate the market, making up 98% of global solar shipments in 2023.</p>
             <p className="mb-4">
@@ -67,8 +67,8 @@ export default function PanelMain() {
         </div>}
         {selectedTab === "type2" && //tab2 selector and content div starting here
         <div>
-            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4">Polycrystalline Solar Panels</h3>
-            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold ">What Are They?</h5>
+            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center border-t border-neutral-strong py-4">Polycrystalline Solar Panels</h3>
+            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold mb-4">What Are They?</h5>
             <p className="mb-4">Polycrystalline panels were once popular but have vanished from production since 2023. They were made from multiple silicon fragments, giving them a blue, speckled appearance </p>
             <p className="mb-4">
               These solar panels are a story of past with efficiency of 18-21% a decent lifespan of 25-30 years with an average output of around 400W under standard testing conditions. But they are mostly discontinued and are not available new.
@@ -90,8 +90,8 @@ export default function PanelMain() {
         </div>}
         {selectedTab === "type3" && //tab3 selector and content div starting here
         <div>
-            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4">Thin Film Solar Panels: The Flexible Alternative</h3>
-            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold ">What Are They?</h5>
+            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center border-t border-neutral-strong py-4">Thin Film Solar Panels: The Flexible Alternative</h3>
+            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold mb-4">What Are They?</h5>
             <p className="mb-4">Thin-film panels are lightweight, flexible sheets made from materials like amorphous silicon, cadmium telluride (CdTe), or copper indium gallium selenide (CIGS). They’re ideal for non-traditional installations like RVs, boats, or curved surfaces. </p>
             <p className="mb-4">
             These solar panels have a lower efficiency than their crystalline counterparts, ranging between 17-19%. Their lifespan is also shorter around 10-20 years. These are best for portable use or unconventional surfaces and conditions.
@@ -115,8 +115,8 @@ export default function PanelMain() {
         </div>}
         {selectedTab === "type4" && //tab4 selector and content div starting here
         <div>
-            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4">Transparent Solar Panels: The Future of Solar Windows</h3>
-            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold ">What Are They?</h5>
+            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center border-t border-neutral-strong py-4">Transparent Solar Panels: The Future of Solar Windows</h3>
+            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold mb-4">What Are They?</h5>
             <p className="mb-4">Transparent solar panels are see-through or semi-transparent, designed to replace windows or glass facades. Currently, they have very low efficiency (1% for fully transparent, ~20% for semi-transparent).</p>
             <p className="mb-4">
             These solar panels have yet to find their foothold in the market as their efficiency is very low. Best use is for commercial buildings, greenhouses etc.
@@ -138,8 +138,8 @@ export default function PanelMain() {
         </div>}
         {selectedTab === "type5" && //tab5 selector and content div starting here
         <div>
-            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4">Solar Tiles: An Invisible Solar Solution</h3>
-            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold ">What Are They?</h5>
+            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center border-t border-neutral-strong py-4">Solar Tiles: An Invisible Solar Solution</h3>
+            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold mb-4">What Are They?</h5>
             <p className="mb-4">Solar tiles (like Tesla Solar Roof) replace traditional roof tiles while generating electricity. They blend in seamlessly but come at a high cost.</p>
             <p className="mb-4">
             This type of solar cell inegrated tiles are 10-20% efficient but can last upto 25-30 years. This a best solution for luxury homes where aesthetics is a priority over economy.
@@ -161,8 +161,8 @@ export default function PanelMain() {
         </div>}
         {selectedTab === "type6" && //tab6 selector and content div starting here
         <div>
-            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center py-4">Perovskite Solar Panels: The Next Big Thing</h3>
-            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold ">What Are They?</h5>
+            <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold text-center border-t border-neutral-strong py-4">Perovskite Solar Panels: The Next Big Thing</h3>
+            <h5 className="w-full h-min text-body-md text-neutral-default font-semibold mb-4">What Are They?</h5>
             <p className="mb-4">Perovskite is a new synthetic material that could revolutionize solar efficiency (lab tests show up to 31% efficiency). However, they’re not yet commercially stable</p>
             <p className="mb-4">
             Perovskite is a calcium titanium oxide mineral, but in solar applications, it refers to human-made compounds with the same crystal structure. These lab-created materials can absorb sunlight more efficiently than silicon while being ultra-thin and flexible.</p>
@@ -187,7 +187,7 @@ export default function PanelMain() {
             </div>
             <p className="mb-4">Only suitable for home owners who prioritize aesthetics over cost-efficiency</p>
         </div>}
-
+        
         <h3 className="w-full h-min text-body-lg text-neutral-default font-semibold mb-4">Which Solar Panel type is Best for You?</h3>
         <div className="w-full overflow-x-auto border border-neutral-regular rounded-curve-xl justify-start items-center flex mb-20">
           <div className="p-4">
