@@ -57,7 +57,13 @@ function App() {
         </div>
       </nav>
       <div className="w-full flex gap-0  max-w-7xl mx-auto relative">
-          <div className={`fixed lg:sticky top-[80px] z-30 self-start left-0 h-[calc(100vh-80px)] w-60 shrink-0 bg-neutral-tertiary border-r border-neutral-regular transition-transform duration-300 ease-in-out
+          {/* Backdrop overlay: only visible when sidebar is open on mobile */}
+          {sidebarOpen && (
+            <div className="fixed w-full inset-0 bg-black/30 z-10 lg:hidden"
+            onClick={() => setSidebarOpen(false)}
+            ></div>
+          )}
+          <div className={`fixed lg:sticky top-[54px] sm:top-[80px] z-30 self-start left-0 h-[calc(100vh-54x)] sm:h-[calc(100vh-80px)] w-60 shrink-0 bg-neutral-tertiary border-r border-neutral-regular transition-transform duration-300 ease-in-out
           ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:block`}
           >
             {/*Sidebar imported from /components/sidebar.jsx*/}
